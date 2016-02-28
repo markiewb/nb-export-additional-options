@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Layer: de/markiewb/netbeans/plugins/nb/my/plugin/layer.xml
+OpenIDE-Module-Localizing-Bundle: de/markiewb/netbeans/plugins/nb/my/plugin/Bundle.properties
+

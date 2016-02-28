@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="OptionsExport">
+        <!--
+            SOURCE_DIR='./dev'
+            TARGET_DIR=‘./9.0’ :-)
+            cp -R ${SOURCE_DIR}/config/Preferences/org/netbeans/modules/projectui/ ${TARGET_DIR}/config/Preferences/org/netbeans/modules/projectui/
+            mkdir -p ${TARGET_DIR}/config/Templates/Properties/
+            cp ${SOURCE_DIR}/config/Templates/Properties/User.properties ${TARGET_DIR}/config/Templates/Properties/User.properties
+            cp -R ${SOURCE_DIR}/config/Editors/text/ ${TARGET_DIR}/config/Editors/text/
+            cp -R ${SOURCE_DIR}/config/Favorites/ ${TARGET_DIR}/config/Favorites/
+            sudo cp -R ${SOURCE_DIR}/config/svn/ ${TARGET_DIR}/config/svn/
+        -->
+        <!-- category -->
+        <folder name="Adams">
+            <!-- at the bottom-->
+            <attr name="position" intvalue="999999999"/>
+            <!-- category display name -->
+            <attr name="displayName" bundlevalue="de.markiewb.netbeans.plugins.nb.my.plugin.Bundle#Category_Adam"/>
+            <!-- item -->
+            <file name="projectui">
+                <attr name="weight" intvalue="100"/>
+                <attr name="displayName" bundlevalue="de.markiewb.netbeans.plugins.nb.my.plugin.Bundle#Item_ProjectUI"/>
+                <!-- include regex pattern rooted to userdir -->
+                <attr name="include" stringvalue="config/Preferences/org/netbeans/modules/projectui/.*"/>
+                <!-- exclude regex pattern rooted to userdir -->
+                <!--<attr name="exclude" stringvalue="config/mymodule/obsolete/.*"/>-->
+            </file>
+            <file name="userproperties">
+                <attr name="weight" intvalue="200"/>
+                <attr name="displayName" bundlevalue="de.markiewb.netbeans.plugins.nb.my.plugin.Bundle#Item_userproperties"/>
+                <!-- include regex pattern rooted to userdir -->
+                <attr name="include" stringvalue="config/Templates/Properties/User\.properties"/>
+                <!-- exclude regex pattern rooted to userdir -->
+                <!--<attr name="exclude" stringvalue="config/mymodule/obsolete/.*"/>-->
+            </file>
+            <file name="editorstext">
+                <attr name="weight" intvalue="300"/>
+                <attr name="displayName" bundlevalue="de.markiewb.netbeans.plugins.nb.my.plugin.Bundle#Item_editorstext"/>
+                <!-- include regex pattern rooted to userdir -->
+                <attr name="include" stringvalue="config/Editors/text/.*"/>
+                <!-- exclude regex pattern rooted to userdir -->
+                <!--<attr name="exclude" stringvalue="config/mymodule/obsolete/.*"/>-->
+            </file>
+            <file name="favorites">
+                <attr name="weight" intvalue="400"/>
+                <attr name="displayName" bundlevalue="de.markiewb.netbeans.plugins.nb.my.plugin.Bundle#Item_favorites"/>
+                <!-- include regex pattern rooted to userdir -->
+                <attr name="include" stringvalue="config/Favorites/.*"/>
+                <!-- exclude regex pattern rooted to userdir -->
+                <!--<attr name="exclude" stringvalue="config/mymodule/obsolete/.*"/>-->
+            </file>
+            <file name="svn">
+                <attr name="weight" intvalue="500"/>
+                <attr name="displayName" bundlevalue="de.markiewb.netbeans.plugins.nb.my.plugin.Bundle#Item_svn"/>
+                <!-- include regex pattern rooted to userdir -->
+                <attr name="include" stringvalue="config/svn/.*"/>
+                <!-- exclude regex pattern rooted to userdir -->
+                <!--<attr name="exclude" stringvalue="config/mymodule/obsolete/.*"/>-->
+            </file>
+        </folder>
+    </folder>
+</filesystem>
